@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyaman Checkout</title>
+    <style>
+        /* Simple CSS */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .button {
+            padding: 5px 10px;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin: 0 2px;
+        }
+
+        .total {
+            font-weight: bold;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .quantity-btn {
+            padding: 2px 8px;
+            background-color: #666;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        .quantity-display {
+            margin: 0 8px;
+        }
+
+        .checkout-title {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .cart-section {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .back-to-shop {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .back-to-shop:hover {
+            background-color: #333;
+        }
+
+        .empty-cart {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            color: #666;
+        }
+
+        .checkout-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .checkout-button:hover {
+            background-color: #45a049;
+        }
+
+        .header-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .refresh-button {
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .refresh-button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="checkout-title">Shopping Cart</h1>
+
+    <div class="cart-section">
+        <div class="header-buttons">
+            <a href="/lvroomv2.html" class="back-to-shop">← Back to Shop</a>
+            <button onclick="window.location.reload()" class="refresh-button">
+                ↻ Refresh Cart
+            </button>
+        </div>
+        <!-- Cart -->
+        <div id="cart-items"></div>
+        <div class="total">Total: Rp <span id="total-price">0</span></div>
+
+        <button onclick="alert('Payment processing would go here!')" class="checkout-button">
+            Proceed to Payment
+        </button>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+
+</html>
+

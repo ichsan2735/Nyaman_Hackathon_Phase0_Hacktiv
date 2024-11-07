@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Login Page</title>
+    </head>
+    <body>
+      <div class="container">
+        <h1 id="greeting">Please log in or register</h1>
+        <div id="login-form" class="form">
+          <input type="text" id="username" placeholder="Username" required>
+          <input type="password" id="password" placeholder="Password" required>
+          <button onclick="login()">Login</button>
+          <button onclick="register()">Register</button>
+          <p id="message"></p>
+        </div>
+        <button id="logout" onclick="logout()" style="display: none;">Logout</button>
+      </div>
+    
+      <script src="./login.js"></script>
+    </body>
+    </html>
+    
+
