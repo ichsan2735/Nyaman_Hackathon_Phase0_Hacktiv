@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dining Room - Nyaman Furniture</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/cart.js"></script>
 </head>
 <body>
     <div class="header">
@@ -13,23 +14,23 @@
                 <img src="./image/logo.png" width="120px">
             </a>
         </h1>
-        <a href="/coPagev2.html" class="cart-button">Cart</a>
+        <a href="/coPage.html" class="cart-button">Cart</a>
     </div>
 
     <h1 class="judul">Dining Room Collection</h1>
     
     <div class="room-container">
         <!-- SVG Living Room Scene -->
-        <img src="diningRoom.jpeg" class="center">
+        <img src="diningRoom.jpeg" class="center" height="100%">
 
         <!-- meja makan-->
-        <div class="furniture-item" style="left: 50%; top: 50%">
+        <div class="furniture-item" style="left: 50%; top: 60%">
             <div class="furniture-hotspot"></div>
             <div class="furniture-card">
                 <h3>Meja Makan Kekinian</h3>
                 <p>Style meja makan terkini</p>
                 <p>Rp. 5.000.000</p>
-                <button class="add-to-cart" onclick="addToCart('Modern Comfort Sofa', 899)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Meja Makan Kekinian', 5_000_000)">Add to Cart</button>
             </div>
         </div>
 
@@ -40,7 +41,7 @@
                 <h3>Paket Vas Bunga</h3>
                 <p>Vas bunga yang sudah include dengan isinya</p>
                 <p>Rp. 100.000</p>
-                <button class="add-to-cart" onclick="addToCart('Glass Coffee Table', 299)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Paket Vas Bunga', 100_000)">Add to Cart</button>
             </div>
 
         <!-- Hiasan meja-->
@@ -51,7 +52,7 @@
                 <h3>Paket Hiasan Meja</h3>
                 <p>Hiasan yang akan membuat mejamu lebis aesthetic</p>
                 <p>Rp. 50.000</p>
-                <button class="add-to-cart" onclick="addToCart('Glass Coffee Table', 299)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Paket Hiasan Meja', 50_000)">Add to Cart</button>
             </div>
         </div>
 
@@ -66,33 +67,5 @@
             </div>
         </div>
     </div>
-
-    <script>
-        // Cart functionality
-        let cart = [];
-
-        function addToCart(name, price) {
-            let found = false;
-            
-            for (let item of cart) {
-                if (item.name === name) {
-                    item.quantity += 1;
-                    found = true;
-                    break;
-                }
-            }
-
-            if (!found) {
-                cart.push({
-                    name: name,
-                    price: price,
-                    quantity: 1
-                });
-            }
-
-            alert(`${name} added to cart!`);
-            console.log('Cart:', cart);
-        }
-    </script>
 </body>
 </html>
