@@ -9,6 +9,82 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
 }
+/* Login Page Styles */
+.container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form input:focus {
+    border-color: #444;
+}
+
+.form button {
+    padding: 12px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #333;
+}
+
+#message {
+    text-align: center;
+    color: #666;
+    margin-top: 10px;
+}
+
+#logout {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#logout:hover {
+    background-color: #cc3333;
+}
+
+/* Additional styles for success/error messages */
+.success-message {
+    color: #4CAF50;
+}
+
+.error-message {
+    color: #ff4444;
+}
 
 /* Header Styles */
 .header {
@@ -254,4 +330,25 @@ h1, h2 {
     text-align: center;
     padding: 20px;
     color: #333;
+}
+
+#login-status {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds space between elements */
+}
+
+#user-greeting {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between greeting and logout */
+}
+
+.logout-btn {
+    color: #ff4444; /* Red color for logout */
+    text-decoration: none;
+}
+
+.logout-btn:hover {
+    background-color: #ffeeee; /* Light red background on hover */
 }
