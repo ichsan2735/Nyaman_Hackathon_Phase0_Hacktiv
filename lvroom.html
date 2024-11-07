@@ -5,152 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Living Room - Nyaman Furniture</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-        }
-
-        .room-container {
-            position: relative;
-            width: 100%;
-            max-width: 1200px;
-            margin: 20px auto;
-            height: 600px;
-            /* background-color: #fff; */
-        }
-
-        .room-image {
-            width: 100%;
-            height: 100%;
-        }
-
-        /* Wrapper for hotspot and card */
-        .furniture-item {
-            position: absolute;
-        }
-
-        .furniture-hotspot {
-            width: 30px;
-            height: 30px;
-            background-color: rgba(255, 255, 255, 0.3);
-            border: 2px solid #444;
-            border-radius: 50%;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .furniture-item:hover .furniture-hotspot {
-            background-color: rgba(255, 255, 255, 0.5);
-            transform: scale(1.1);
-        }
-
-        .furniture-card {
-            position: absolute;
-            background-color: white;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 200px;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-            /* Position the card relative to the hotspot */
-            left: -85px;
-            top: -120px;
-        }
-
-        .furniture-item:hover .furniture-card {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .furniture-card h3 {
-            margin-bottom: 8px;
-            color: #333;
-        }
-
-        .furniture-card p {
-            margin-bottom: 12px;
-            color: #666;
-        }
-
-        .add-to-cart {
-            background-color: #444;
-            color: white;
-            border: none;
-            padding: 8px 12px;
-            border-radius: 4px;
-            cursor: pointer;
-            width: 100%;
-            transition: background-color 0.3s ease;
-        }
-
-        .add-to-cart:hover {
-            background-color: #333;
-        }
-
-        h1 {
-            text-align: center;
-            padding: 20px;
-            color: #333;
-        }
-
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 70%;
-        }
-
-        .header {
-            background-color: #d7cec2;
-            height: 75px;
-            padding: 1px 30px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .cart-button {
-            background-color: white;
-            color: black;
-            padding: 8px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .cart-button:hover {
-            background-color: #f0f0f0;
-        }
-
-        .header-title {
-            color: white;
-            margin: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="header">
         <h1 class="header-title">
-            <a href="./coPagev2.html">
+            <a href="./index.html">
                 <img src="./image/logo.png" width="120px">
             </a>
         </h1>
-        <a href="/coPagev2.html" class="cart-button">Cart</a>
+        <a href="/coPage.html" class="cart-button">Cart</a>
     </div>
     <h1>Living Room Collection</h1>
 
