@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bed Room - Nyaman Furniture</title>
+    <title>Dining Room - Nyaman Furniture</title>
     <style>
         * {
             margin: 0;
@@ -107,10 +107,52 @@
         width: 70%;
         height: 100%;
         }
+        .header-title {
+            color: white;
+            margin: 0;
+        }
+        .header {
+            background-color: #d7cec2;
+            height: 75px;
+            padding: 1px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .cart-button {
+            background-color: white;
+            color: black;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .cart-button:hover {
+            background-color: #f0f0f0;
+        }
+
+        .judul{
+            font-family: Chokokuta;
+        }
     </style>
 </head>
 <body>
-    <h1>Dining Room Collection</h1>
+    <div class="header">
+        <h1 class="header-title">
+            <a href="./coPagev2.html">
+                <img src="./image/logo.png" width="120px">
+            </a>
+        </h1>
+        <a href="/coPagev2.html" class="cart-button">Cart</a>
+    </div>
+
+    <h1 class="judul">Dining Room Collection</h1>
     
     <div class="room-container">
         <!-- SVG Living Room Scene -->
