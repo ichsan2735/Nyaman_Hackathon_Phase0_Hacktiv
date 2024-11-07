@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #beb2a28c; 
 }
 /* Login Page Styles */
 .container {
@@ -117,6 +117,7 @@ body {
 .header-title {
     color: white;
     margin: 0;
+    margin-top: 25px;
 }
 
 /* Living Room Page Styles */
@@ -201,6 +202,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+    border: 5px solid #bfb4a5;
 }
 
 /* Checkout Page Styles */
@@ -336,8 +338,9 @@ body {
 /* Common Page Title Styles */
 h1, h2 {
     text-align: center;
-    padding: 20px;
+    margin-top: 1%;
     color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #login-status {
@@ -359,4 +362,53 @@ h1, h2 {
 
 .logout-btn:hover {
     background-color: #ffeeee; /* Light red background on hover */
+}
+
+
+.about-content {
+    margin-top: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 130px);
+}
+
+.about-wrapper {
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    max-width: 600px;
+    width: 90%;
+}
+
+.about-heading {
+    color: #111;
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: -0.5px;
+}
+
+.team-members {
+    margin-bottom: 40px;
+}
+
+.team-members p {
+    margin: 40px 0;
+    color: #333;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+}
+
+.address {
+    color: #666;
+    font-size: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+    margin-top: 30px;
+    line-height: 1.8;
+    font-weight: 300;
 }
